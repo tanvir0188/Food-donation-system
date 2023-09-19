@@ -1,0 +1,30 @@
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+
+  }
+
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    opacity: 0;
+
+    transition: opacity 0.3s;
+  }
+
+  .video-container:hover .video-overlay {
+    opacity: 1;
+
+  }
+
+  video {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
